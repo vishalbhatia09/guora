@@ -14,7 +14,7 @@
 ### Docker
 
 ```sh
-$ docker run -d --name guora -p 8080:8080 meloalright/guora:beta
+$ docker run -d --name guora -p 8080:8080 meloalright/guora:beta1
 ```
 
 ### Source
@@ -33,25 +33,19 @@ $ cd guora
 $ go mod download
 ```
 
-#### 3.Edit `conf/configuration.yaml`
+#### 3.Edit [conf/configuration.yaml](conf/configuration.yaml)
 
 `Open it and edit your redis config. 打开配置文件并编辑你的 redis 环境配置。`
 
 #### 4.Init and Run
 
 ```shell
-<<<<<<< HEAD
-$ (sudo) go run github.com/meloalright/guora/cmd/guora -init=true (if you want to initialize all then run)
-or
-$ (sudo) go run github.com/meloalright/guora/cmd/guora
-=======
 $ (sudo) go run ./cmd/guora -init
->>>>>>> upstream/master
 ```
 
 ## Visit website
 
-visit [localhost:8080](localhost:8080) and log in as admin
+visit [localhost:8080](http://localhost:8080) and log in as admin
 
 |                     |                 |
 | ------------------- | --------------- |
